@@ -1,0 +1,14 @@
+# Usar una imagen base de Go
+FROM golang:1.20-alpine
+
+# Crear un directorio de trabajo
+WORKDIR /app
+
+# Copiar el archivo del cliente a /app
+COPY client.go .
+
+# Compilar el cliente
+RUN go build -o client .
+
+# Ejecutar el cliente
+CMD ["./client"]
