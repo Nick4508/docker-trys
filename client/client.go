@@ -9,7 +9,7 @@ import (
 
 func main() {
 	// Cambia "server-ip" por la IP de la máquina del servidor
-	conn, err := net.Dial("tcp", "server-ip:8080")
+	conn, err := net.Dial("tcp", "10.35.168.79:8080")
 	if err != nil {
 		fmt.Println("Error al conectar con el servidor:", err)
 		os.Exit(1)
